@@ -112,10 +112,6 @@ WSGI_APPLICATION = 'learning_log.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
-if ON_HEROKU == True:
-    import dj_database_url
-    DATABASES = {'default': dj_database_url.config()}
-else:
     DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
